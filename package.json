@@ -1,0 +1,26 @@
+{
+  "name": "tralgo_server",
+  "version": "1.0.0",
+  "description": "Backend Api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmcnz/Tralgo_Server.git"
+  },
+  "author": "Danailnzmc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielmcnz/Tralgo_Server/issues"
+  },
+  "homepage": "https://github.com/danielmcnz/Tralgo_Server#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
