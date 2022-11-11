@@ -1,7 +1,15 @@
 exports.getUser = (req, res, next) => {
   res.status(200).json({
-    user: "Taj",
-    email: "Bla@gmail.com",
+    users: [
+      {
+        user: "Taj",
+        email: "Bla@gmail.com",
+      },
+      {
+        user: "Dans",
+        email: "Bla2@gmail.com",
+      },
+    ],
   });
 };
 
@@ -10,11 +18,13 @@ exports.createUser = (req, res, next) => {
   const email = req.body.email;
   const password = req.body.password;
 
-  res.state(200).json({
-    userName: name,
-    email: email,
-    password: password,
-  });
+  res.status(201).json([
+    {
+      name: name,
+      email: email,
+      password: password,
+    },
+  ]);
 };
 
 exports.updateUser = (req, res, next) => {};
